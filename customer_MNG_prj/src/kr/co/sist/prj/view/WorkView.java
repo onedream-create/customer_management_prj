@@ -88,7 +88,7 @@ public class WorkView extends JFrame{
 		jbtnSearch.setFont(font);
 		jbtnEnd.setFont(font);
 		
-		ImageIcon ii = new ImageIcon("./src/kr/co/sist/prj/img/crystal-ball.png");
+		ImageIcon ii = new ImageIcon("customer_MNG_prj/img/crystal-ball.png");
 		
 		dlmData =new DefaultListModel<LoadData>();
 		jlistDataView=new JList<LoadData>(dlmData);

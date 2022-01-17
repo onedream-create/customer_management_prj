@@ -16,8 +16,8 @@ import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
 
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
-import com.sun.tools.classfile.StackMap_attribute.stack_map_frame;
+//import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
+//import com.sun.tools.classfile.StackMap_attribute.stack_map_frame;
 
 import kr.co.sist.prj.view.WorkView;
 import kr.co.sist.prj.vo.LoadData;
@@ -34,7 +34,7 @@ public class WorkViewEvent implements ActionListener{
 	}//WorkViewEvent
 
 	public void loadData() throws IOException {
-		 file = new File("./src/kr/co/sist/prj/dataFile/work_data.dat");
+		 file = new File("customer_MNG_prj/dataFile/work_data.dat");
 		 String str="";
 		  int lineCnt=0; 
 		  BufferedReader br = null;
@@ -68,7 +68,7 @@ public class WorkViewEvent implements ActionListener{
 	
 	public void addData() throws IOException {
 		BufferedWriter bw = null;
-		File file = new File("./src/kr/co/sist/prj/dataFile/work_data.dat");
+		File file = new File("customer_MNG_prj/dataFile/work_data.dat");
 		LoadData newData = new LoadData(wv.getJtfName().getText(),wv.getJtfClient().getText(),wv.getJtfPhone().getText(), wv.getJtfEmail().getText());
 		if(!wv.getDlmData().equals(newData)) {
 		
@@ -101,7 +101,7 @@ public class WorkViewEvent implements ActionListener{
 		if(searchClient == null || searchClient.equals("")) {
 			return;
 		} else {
-			 file = new File("./src/kr/co/sist/prj/dataFile/work_data.dat");
+			 file = new File("customer_MNG_prj/dataFile/work_data.dat");
 			 String str="";
 			  int cnt=0; 
 			  BufferedReader br = null;
